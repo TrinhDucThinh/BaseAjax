@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts{
+    <script src="~/Scripts/libs/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+<script src="~/Scripts/libs/moment/moment.js"></script>
+    <script src="~/Scripts/libs/mustache/mustache.min.js"></script>
+    <script src="~/Scripts/controllers/studentController.js"></script>
+
+}
+<h2>List Student</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Index</td>
+            <td>Full Name</td>
+            <td>Date Of Birth</td>
+            <td>Email</td>
+            <td>Status</td>
+        </tr>
+    </thead>
+    <tbody id="tblStudent"></tbody>
+</table>
+
+<script id="data-template" type="x-tmpl-mustache">
+    <tr>
+        <td>{{Index}}</td>
+        <td>{{Name}}</td>
+        <td>{{DateOfBirth}}</td>
+        <td>{{Email}}</td>
+        <td>{{Status}}</td>
+    </tr>
+</script>

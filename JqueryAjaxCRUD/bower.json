@@ -1,0 +1,9 @@
+{
+	"name": "ASP.NET",
+	"private": true,
+  "dependencies": {
+    "mustache": "~2.3.0",
+    "eonasdan-bootstrap-datetimepicker": "~4.17.47",
+    "twbs-pagination": "~1.4.1"
+  }
+}
